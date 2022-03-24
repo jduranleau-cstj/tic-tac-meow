@@ -11,6 +11,7 @@
     <body>
         @verbatim
         <div id="app" v-cloak>
+            <p v-show="en_cours_de_jeu == false">Fin de la partie</p>
             <div class="conteneur-grille">
                 <div 
                     class="carre"
@@ -19,6 +20,7 @@
                     :class="{ jouable: estJouable(i) }"
                     >{{ carre }}</div>
             </div>
+
         </div>
         @endverbatim
 

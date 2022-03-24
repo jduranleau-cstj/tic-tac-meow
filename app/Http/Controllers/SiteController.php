@@ -29,12 +29,16 @@ class SiteController extends Controller
             }
         }
 
-        $index_au_hasard = array_rand($coups_possibles);
+        if (in_array(4, $coups_possibles)) {
+            $resultat = 4;
+        } else {
+            $index_au_hasard = array_rand($coups_possibles);
+            $resultat = $coups_possibles[$index_au_hasard];
+        }
+
 
         return response()->json([
-            "tour_ia" => $coups_possibles[$index_au_hasard],
+            "tour_ia" => $resultat,
         ]);
-
-        echo json_encode($resultat);
     }
 }
