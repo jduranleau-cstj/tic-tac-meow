@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [SiteController::class, "index"]);
 Route::get('/jeu', [SiteController::class, "jeu"]);
 Route::get('/fin', [SiteController::class, "fin"]);
+
+Route::get('/ia', [SiteController::class, "ia"]);
