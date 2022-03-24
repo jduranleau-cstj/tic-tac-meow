@@ -10,8 +10,15 @@
     </head>
     <body>
         @verbatim
-        <div id="app">
-            {{ nom }}
+        <div id="app" v-cloak>
+            <div class="conteneur-grille">
+                <div 
+                    class="carre"
+                    v-for="(carre, i) of carres"
+                    @click="clickCarre(i)"
+                    :class="{ jouable: estJouable(i) }"
+                    >{{ carre }}</div>
+            </div>
         </div>
         @endverbatim
 

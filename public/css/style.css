@@ -1,4 +1,60 @@
 html {
   background-color: #8c8c8c;
+  font-family: Arial;
+}
+
+body {
+  margin: 0px;
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+#app[v-cloak] {
+  display: none;
+}
+
+.conteneur-grille {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 225px;
+}
+
+.conteneur-grille .carre {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 42px;
+}
+
+.conteneur-grille .carre.jouable {
+  -webkit-box-shadow: inset 0px 0px 5px #0F0;
+          box-shadow: inset 0px 0px 5px #0F0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
